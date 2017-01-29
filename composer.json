@@ -1,0 +1,56 @@
+{
+    "name": "alt3/cakephp-tokens",
+    "description": "CakePHP plugin for generating various (secure) tokens",
+    "keywords": [
+        "cakephp",
+        "tokens",
+        "alt3"
+    ],
+    "type": "cakephp-plugin",
+    "homepage": "https://github.com/alt3/cakephp-tokens",
+    "support": {
+        "issues": "https://github.com/alt3/cakephp-tokens/issues",
+        "source": "https://github.com/alt3/cakephp-tokens"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bravo-kernel"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": "3.*",
+        "alt3/tokens": "^1.0"
+    },
+    "require-dev": {
+        "cakephp/cakephp": "3.*",
+        "phpunit/phpunit": "5.*",
+        "squizlabs/php_codesniffer": "^2.5",
+        "cakephp/cakephp-codesniffer": "dev-master"
+    },
+    "support": {
+        "issues": "https://github.com/alt3/cakephp-tokens/issues",
+        "source": "https://github.com/alt3/cakephp-tokens"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alt3\\CakeTokens\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alt3\\CakeTokens\\Test\\": "tests"
+        }
+    },
+    "minimum-stability": "stable",
+    "scripts": {
+        "tests": "./vendor/bin/phpunit",
+        "cs": "./vendor/bin/phpcs -p --extensions=php --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
