@@ -10,7 +10,7 @@ CakePHP plugin for generating various (secure) tokens.
 
 ## Requirements
 
-* CakePHP 3.0+
+* CakePHP 3.+
 
 ## Installation
 
