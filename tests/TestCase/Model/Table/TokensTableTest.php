@@ -69,7 +69,7 @@ class TokensTableTest extends TestCase
     }
 
     /**
-     * Test findValidToken method. Will only succeed if these threeconditions match:
+     * Test findValidToken method. Requires matching the following conditions.
      *
      * - Token value exists
      * - Token has not expired

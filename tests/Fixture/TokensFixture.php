@@ -4,7 +4,7 @@ namespace Alt3\CakeTokens\Test\Fixture;
 use Cake\TestSuite\Fixture\TestFixture;
 
 /**
- * TokensFixture
+ * TokensFixture.
  */
 class TokensFixture extends TestFixture
 {
