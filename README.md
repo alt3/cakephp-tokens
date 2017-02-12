@@ -12,6 +12,10 @@ CakePHP plugin for generating various (secure) tokens.
 
 * CakePHP 3.+
 
+> PHP 5.x users are strongly advised to install the
+> [paragonie/random_compat](https://github.com/paragonie/random_compat)
+> polyfill composer package to ensure generated tokens are truly secure.
+
 ## Installation
 
 1. Install the plugin using composer:
@@ -43,11 +47,11 @@ CakePHP plugin for generating various (secure) tokens.
 Inside your controller:
 
 ```php
-use Alt3\Tokens\RandomBytesAdapter
+use Alt3\Tokens\RandomBytesToken
 
 public function test() {
 
-  // create the token object
+  // create a token object
   $token = new RandomBytesToken();
   $token->setCategory('password-reset');
   $token->setLifetime('+1 week');
