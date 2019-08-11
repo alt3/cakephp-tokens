@@ -8,6 +8,8 @@
 
 CakePHP plugin for generating various (secure) tokens.
 
+![Abandoned repository](./abandoned-repo.png "This repository is no longer maintained.")
+
 ## Requirements
 
 * CakePHP 3.+
@@ -59,7 +61,7 @@ public function test() {
   // save the token object
   $table = TableRegistry::get('Alt3/CakeTokens.Tokens');
   $entity = $table->newEntity($token->toArray());
-  
+
   if ($table->save($entity)) {
     pr('Successfully saved token with id ' . $entity->id);
   }
